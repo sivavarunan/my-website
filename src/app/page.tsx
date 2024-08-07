@@ -5,7 +5,7 @@ const HomePage = () => {
   return (
     <main>
       <Home />
-      <About />
+      {/* <About /> */}
     </main>
   );
 };

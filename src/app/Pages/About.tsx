@@ -11,7 +11,7 @@ const About = () => {
 
       <Navbar />
 
-      <main className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
+      <main className="flex flex-col items-center justify-center min-h-screen">
         <h1 className="text-4xl font-bold">About Us</h1>
         <p className="mt-4 text-xl">This is the about page of the website.</p>
       </main>
