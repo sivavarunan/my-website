@@ -1,21 +1,37 @@
-import Link from 'next/link';
+"use client";
 
-const Navbar = () => {
+import React from "react";
+import Link from "next/link";
+import Logo from "./Logo";
+import Button from "./Button";
+
+const Navbar: React.FC = () => {
   return (
-    <nav className="bg-gray-800 p-4">
-      <ul className="flex justify-around">
-        <li>
-          <Link href="/" className="text-white">
-            Home
-          </Link>
-        </li>
-        <li>
-          <Link href="/about" className="text-white">
-            About
-          </Link>
-        </li>
-      </ul>
-    </nav>
+    <div className="w-full h-20 bg-black sticky top-0">
+      <div className="container mx-auto px-4 h-full">
+        <div className="flex justify-between items-center h-full">
+          <Logo />
+          <ul className="hidden md:flex gap-x-6 text-white">
+            <li>
+              <Link href="/about">
+                <p>About Us</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/services">
+                <p>Services</p>
+              </Link>
+            </li>
+            <li>
+              <Link href="/contacts">
+                <p>Contacts</p>
+              </Link>
+            </li>
+          </ul>
+          <Button className="hidden md:block" onClick={() => alert('Button clicked!')}>HI</Button>
+        </div>
+      </div>
+    </div>
   );
 };
 
