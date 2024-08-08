@@ -7,8 +7,8 @@ const Logo = () => {
       <Image 
         src="/bg6.png" 
         alt="Logo" 
-        width={96} 
-        height={96} 
+        width={36} 
+        height={36} 
         className="object-contain"
       />
     </div>
