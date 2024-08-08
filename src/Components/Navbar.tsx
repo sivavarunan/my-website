@@ -6,7 +6,7 @@ import { cn } from "@/lib/utils";
 export function NavbarDemo() {
   return (
     <div className="relative w-full flex items-center justify-center">
-      <Navbar className="top-2" />
+      <Navbar className="top-3" />
     </div>
   );
 }
@@ -30,32 +30,32 @@ function Navbar({ className }: { className?: string }) {
           <div className="text-sm grid grid-cols-2 gap-10 p-4">
             <ProductItem
               title="Video Games"
-              href="/products/Videogame"
+              href="/products/videogame"
               src="/images/videogame.png"
               description="Peaceful Life."
             />
             <ProductItem
               title="Anime"
-              href="/products/Anime"
-              src="/images/anime.png"
+              href="/products/anime"
+              src="/images/anime.jpg"
               description="Peak Fictions."
             />
             <ProductItem
               title="Movies"
-              href="/products/moonbeam"
-              src="/images/moonbeam.png"
+              href="/products/movies"
+              src="/images/movie.jpg"
               description="The Absolute Masterclass."
             />
             <ProductItem
               title="TV-Series"
               href="/products/tvseries"
-              src="/images/tvseries.png"
+              src="/images/tvseries.jpg"
               description="Mind Bending Modern Literature."
             />
             <ProductItem
               title="Books"
               href="/products/books"
-              src="/images/books.png"
+              src="/images/book.jpg"
               description="The books I lost myself in."
             /> 
           </div>
