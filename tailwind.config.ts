@@ -8,6 +8,12 @@ module.exports = {
 
   theme: {
     extend: {
+      fontFamily: {
+        foldit: ['Foldit', 'sans-serif'],
+        josefin: ['Josefin Sans', 'sans-serif'],
+        kalnia: ['Kalnia Glaze', 'sans-serif'],
+        karla: ['Karla', 'sans-serif'],
+      },
       animation: {
         shimmer: "shimmer 2s linear infinite",
       },
