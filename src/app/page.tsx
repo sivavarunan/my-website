@@ -1,13 +1,9 @@
-import Home from "./Pages/index";
-import About from "./Pages/About";
+import HomePage from './pages/HomePage';
 
-const HomePage = () => {
+const IndexPage: React.FC = () => {
   return (
-    <main>
-      <Home />
-      {/* <About /> */}
-    </main>
+    <HomePage />
   );
 };
 
-export default HomePage;
+export default IndexPage;
