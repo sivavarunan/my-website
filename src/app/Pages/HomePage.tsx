@@ -3,6 +3,8 @@ import React from 'react';
 import { NavbarDemo } from '@/Components/Navbar';
 import { Vortex } from '@/Components/vortex';
 import { TextGenerateEffect } from "@/Components/text-generate-effect";
+// import { Cover } from "@/Components/cover";
+
 
 const words = `Welcome to My Web Page`
 export function TextGenerate() {
@@ -27,13 +29,14 @@ const HomePage: React.FC = () => {
 
             <TextGenerate/>
         
-          <p className="md:text-2xl max-w-xl mt-6 text-center font-foldit text-2xl">
-            Feel <span className='text-red-400'> Free </span> to Explore About Me..
+            <p className="bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20 text-3xl">
+            Feel <span className='text-red-400'> Free </span>  to Explore About Me..
             </p>
           <button className="inline-flex h-12 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 mt-6">
             Hay
           </button>
         </Vortex>
+       
       </div>
     </main> 
   );
