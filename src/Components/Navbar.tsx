@@ -2,8 +2,9 @@
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./navbar-menu";
 import { cn } from "@/lib/utils";
+import { HomeIcon } from "@heroicons/react/24/outline";
 
-export function NavbarDemo() {
+export function NavbarC() {
   return (
     <div className="relative w-full flex items-center justify-center">
       <Navbar className="top-3" />
@@ -17,6 +18,12 @@ function Navbar({ className }: { className?: string }) {
   return (
     <nav className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 shadow-lg", className)}>
       <Menu setActive={setActive}>
+        <div className="flex items-center justify-between">
+          <HoveredLink href="/">
+            <HomeIcon className="mr-2 h-6 w-7 text-white hover:text-red-400 cursor-pointer" />
+          </HoveredLink>
+        </div>
+
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
             <HoveredLink href="/web-dev">Web Development</HoveredLink>
