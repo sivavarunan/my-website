@@ -1,6 +1,6 @@
 "use client"
 import React from 'react';
-import { NavbarDemo } from '@/Components/Navbar';
+import { NavbarC } from '@/Components/Navbar';
 import { Vortex } from '@/Components/vortex';
 import { TextGenerateEffect } from "@/Components/text-generate-effect";
 
@@ -12,7 +12,7 @@ export function TextGenerate() {
 const HomePage: React.FC = () => {
   return (
     <main className="min-h-screen flex flex-col items-center justify-center">
-      <NavbarDemo />
+      <NavbarC />
 
       <div className="w-[calc(100%-4rem)] mx-auto rounded-md h-[30rem] overflow-hidden mt-20">
         <Vortex
