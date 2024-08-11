@@ -3,12 +3,10 @@ import React from 'react';
 import { NavbarDemo } from '@/Components/Navbar';
 import { Vortex } from '@/Components/vortex';
 import { TextGenerateEffect } from "@/Components/text-generate-effect";
-// import { Cover } from "@/Components/cover";
-
 
 const words = `Welcome to My Web Page`
 export function TextGenerate() {
-  return <TextGenerateEffect duration={2} filter={false} words={words} className="font-karla" />;
+  return <TextGenerateEffect duration={2} filter={false} words={words} className="font-karla bg-clip-text text-transparent drop-shadow-2xl bg-gradient-to-b from-white/80 to-white/20 text-6xl" />;
 }
 
 const HomePage: React.FC = () => {
