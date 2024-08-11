@@ -1,10 +1,13 @@
 import React from 'react';
 import { Card } from '@/Components/card';
 import { SparklesCore } from '@/Components/sparkles';
+import { NavbarC } from '@/Components/Navbar';
 
 const MoviesPage: React.FC = () => {
   return (
-    <div className="relative w-full h-screen overflow-hidden bg-black">
+    <div className="relative w-full h-auto bg-black">
+      <NavbarC /> {/* Move NavbarC outside of the content wrapper */}
+
       <SparklesCore
         id="tsparticlesfullpage"
         background="transparent"
@@ -14,7 +17,8 @@ const MoviesPage: React.FC = () => {
         className="absolute inset-0 w-full h-full"
         particleColor="#FFFFFF"
       />
-      <div className="flex justify-center items-center min-h-screen relative z-10">
+      
+      <div className="flex justify-center items-center min-h-screen relative z-10 mt-16"> {/* Add margin-top to space out content below the Navbar */}
         <div className="p-6 max-w-screen-lg w-full bg-black bg-opacity-50 rounded-md">
           <h1 className="text-3xl font-bold text-center mb-4 text-white">Movies</h1>
           <p className="text-center mb-6 text-white">This page will showcase Movies.</p>
