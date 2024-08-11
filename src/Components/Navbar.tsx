@@ -20,7 +20,7 @@ function Navbar({ className }: { className?: string }) {
       <Menu setActive={setActive}>
         <div className="flex items-center justify-between">
           <HoveredLink href="/">
-            <HomeIcon className="mr-2 h-6 w-7 text-white hover:text-red-400 cursor-pointer" />
+            <HomeIcon className="mr-2 h-6 w-7  hover:text-red-400 cursor-pointer" />
           </HoveredLink>
         </div>
 
