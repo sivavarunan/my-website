@@ -58,13 +58,14 @@ export const Card: React.FC<CardProps> = ({ title, description, imageUrl, hoverI
     >
       <motion.div
         className="bg-black rounded-lg shadow-lg max-w-lg w-full relative"
+        style={{ backgroundImage: `url(${imageUrl})` }}
         initial={{ scale: 0.8 }} // Initial scale
         animate={{ scale: 2 }} // Final scale
         exit={{ scale: 0.8 }} // Scale when exiting
         transition={{ duration: 0.3 }}
       >
         <button
-          className="absolute top-2 right-2 text-gray-600 text-3xl"
+          className="absolute top-4 right-4 text-gray-200 text-4xl  z-60 hover:text-red-500 transition-colors duration-300 cursor-pointer"
           onClick={handleClosePopup}
         >
           &times;
@@ -75,7 +76,7 @@ export const Card: React.FC<CardProps> = ({ title, description, imageUrl, hoverI
           alt={title}
           className="w-full h-48 object-cover mb-4 rounded-md"
         />
-        <p className="text-gray-700">{description}</p>
+        <p className="text-white">{description}</p>
       </motion.div>
     </motion.div>
   )}
