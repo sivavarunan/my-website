@@ -1,26 +1,29 @@
 import React from 'react';
 import { Card } from '@/Components/card';
 import { SparklesCore } from '@/Components/sparkles';
-import { NavbarC } from '@/Components/Navbar';
+import App from '@/Components/App';
 
 const AnimePage: React.FC = () => {
   return (
+    <App>
     <div className="relative w-full h-auto bg-black">
-      <NavbarC /> 
-
-      <SparklesCore
-        id="tsparticlesfullpage"
-        background="transparent"
-        minSize={0.6}
-        maxSize={1.4}
-        particleDensity={100}
-        className="absolute inset-0 w-full h-full"
-        particleColor="#FFFFFF"
-      />
+    <SparklesCore
+      id="tsparticlesfullpage"
+      background="transparent"
+      minSize={1.0}
+      maxSize={4.0}
+      particleDensity={120}
+      className="absolute inset-0 w-full h-full"
+      particleColor="#c94242"
+      speed={5}
+    />
+    
       
-      <div className="flex flex-col justify-center items-center p-4 mt-16">
+      <div className="flex flex-col justify-center items-center p-4 ">
         <div className="max-w-screen-lg w-full">
-          <h1 className="text-6xl text-center md:text-6xl lg:text-6xl font-bold font-karla bg-clip-text text-transparent bg-gradient-to-b from-red-100 via-red-300 to-red-500 drop-shadow-2xl shadow-red-500/30 p-6 md:p-8 lg:p-10 rounded-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">ANIME</h1>
+        <h1 className="text-6xl text-center md:text-6xl lg:text-6xl font-bold font-karla bg-clip-text text-transparent bg-gradient-to-b from-red-300 via-red-500 to-black drop-shadow-2xl shadow-red-500/30 p-6 md:p-8 lg:p-10 rounded-lg transform hover:scale-105 transition-transform duration-300 ease-in-out">
+              ANIME
+            </h1>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2">
             <Card
               title="Attack On Titan"
@@ -62,6 +65,7 @@ const AnimePage: React.FC = () => {
         </div>
       </div>
     </div>
+    </App>
   );
 };
 
