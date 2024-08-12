@@ -32,7 +32,7 @@ export const Card: React.FC<CardProps> = ({ title, description, imageUrl, hoverI
         onClick={handleCardClick}
       >
         <div
-          className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity duration-500"
+          className="absolute inset-0 bg-black opacity-0 group-hover:opacity-70 transition-opacity duration-500"
           style={{
             backgroundImage: `url(${hoverImageUrl})`,
             backgroundSize: 'cover',
@@ -43,45 +43,42 @@ export const Card: React.FC<CardProps> = ({ title, description, imageUrl, hoverI
           <h1 className="font-bold text-xl md:text-3xl text-red-400">
             {title}
           </h1>
-          
         </div>
       </div>
 
       <AnimatePresence>
-  {isOpen && (
-    <motion.div
-      className="fixed inset-0 bg-black bg-opacity-70 flex items-center justify-center z-50"
-      initial={{ opacity: 0 }}
-      animate={{ opacity: 1 }}
-      exit={{ opacity: 0 }}
-      transition={{ duration: 0.3 }}
-    >
-      <motion.div
-        className="bg-black rounded-lg shadow-lg max-w-lg w-full relative"
-        style={{ backgroundImage: `url(${imageUrl})` }}
-        initial={{ scale: 0.8 }} // Initial scale
-        animate={{ scale: 2 }} // Final scale
-        exit={{ scale: 0.8 }} // Scale when exiting
-        transition={{ duration: 0.3 }}
-      >
-        <button
-          className="absolute top-4 right-4 text-gray-200 text-4xl  z-60 hover:text-red-500 transition-colors duration-300 cursor-pointer"
-          onClick={handleClosePopup}
-        >
-          &times;
-        </button>
-        <h2 className="text-xl font-bold mb-4">{title}</h2>
-        <img
-          src={imageUrl}
-          alt={title}
-          className="w-full h-48 object-cover mb-4 rounded-md"
-        />
-        <p className="text-white">{description}</p>
-      </motion.div>
-    </motion.div>
-  )}
-</AnimatePresence>
-
+        {isOpen && (
+          <motion.div
+            className="fixed inset-0 flex items-center justify-center z-50"
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            <motion.div
+              className="relative max-w-lg w-full h-full bg-cover bg-center rounded-lg shadow-lg flex flex-col"
+              style={{ backgroundImage: `url(${imageUrl})` }}
+              initial={{ scale: 0.8 }}
+              animate={{ scale: 1 }}
+              exit={{ scale: 0.8 }}
+              transition={{ duration: 0.3 }}
+            >
+              <div className="flex justify-end p-4">
+                <button
+                  className="inline-flex h-11 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                  onClick={handleClosePopup}
+                >
+                  &times;
+                </button>
+              </div>
+              <div className="relative h-full flex flex-col items-center justify-center p-6 rounded-lg ">
+                <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
+                <p className="text-lg text-white">{description}</p>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </div>
   );
 };
