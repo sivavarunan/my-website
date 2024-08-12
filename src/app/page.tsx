@@ -1,8 +1,12 @@
+import React from 'react';
+import App from '@/Components/App';  
 import HomePage from './pages/HomePage';
 
 const IndexPage: React.FC = () => {
   return (
-    <HomePage />
+    <App>
+      <HomePage />
+    </App>
   );
 };
 
