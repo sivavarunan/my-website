@@ -7,9 +7,10 @@ interface CardProps {
   description: string;
   imageUrl: string;
   hoverImageUrl: string;
+  bgUrl: string;
 }
 
-export const Card: React.FC<CardProps> = ({ title, description, imageUrl, hoverImageUrl }) => {
+export const Card: React.FC<CardProps> = ({ title, description, imageUrl, hoverImageUrl, bgUrl }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   const handleCardClick = () => {
@@ -49,7 +50,13 @@ export const Card: React.FC<CardProps> = ({ title, description, imageUrl, hoverI
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            className="fixed inset-0 flex items-center justify-center z-50"
+            className="fixed inset-0 flex items-center justify-center z-50 bg-black bg-opacity-80"
+            style={{
+              backgroundImage: `url(${bgUrl})`,
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundRepeat: 'no-repeat',
+            }}
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             exit={{ opacity: 0 }}
@@ -65,13 +72,13 @@ export const Card: React.FC<CardProps> = ({ title, description, imageUrl, hoverI
             >
               <div className="flex justify-end p-4">
                 <button
-                  className="inline-flex h-11 animate-shimmer items-center justify-center rounded-md border border-slate-800 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-6 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                  className="inline-flex h-8 w-8 items-center justify-center rounded-md border hover:text-red-800 text-2xl border-slate-400 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-2 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
                   onClick={handleClosePopup}
                 >
                   &times;
                 </button>
               </div>
-              <div className="relative h-full flex flex-col items-center justify-center p-6 rounded-lg ">
+              <div className="relative h-full flex flex-col  p-6 rounded-lg">
                 <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
                 <p className="text-lg text-white">{description}</p>
               </div>
