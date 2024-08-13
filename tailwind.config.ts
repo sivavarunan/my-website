@@ -8,6 +8,9 @@ module.exports = {
 
   theme: {
     extend: {
+      maskImage: {
+        'gradient-to-r': 'linear-gradient(to right, transparent, white 10%, white 90%, transparent)',
+      },
       fontFamily: {
         foldit: ['Foldit', 'sans-serif'],
         josefin: ['Josefin Sans', 'sans-serif'],

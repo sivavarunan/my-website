@@ -137,9 +137,9 @@ const AnimePage: React.FC = () => {
       </div>
 
       <div className="relative w-full">
-        <div
+        <div 
           ref={sliderRef}
-          className="flex gap-4 overflow-x-auto no-scrollbar py-2 cursor-grab"
+          className="flex gap-4 overflow-x-auto no-scrollbar py-2"
           onMouseDown={handleMouseDown}
           onMouseLeave={handleMouseLeave}
           onMouseUp={handleMouseUp}
@@ -148,10 +148,12 @@ const AnimePage: React.FC = () => {
           onTouchEnd={handleTouchEnd}
           onTouchMove={handleTouchMove}
         >
+
           {AnimeList.map((item) => (
             <div
               key={item.id}
               className="flex-none w-60 bg-white rounded-lg shadow-md overflow-hidden"
+             
             >
               <Card
                 title={item.title}
