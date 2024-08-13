@@ -9,7 +9,7 @@ const App: React.FC<AppProps> = ({ children }) => {
   return (
     <div className="relative w-full h-auto bg-black">
       <NavbarC />
-      <div className="pt-[40px]"> 
+      <div className=""> 
         {children}
       </div>
     </div>
