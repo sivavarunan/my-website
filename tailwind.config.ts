@@ -18,6 +18,7 @@ module.exports = {
         karla: ['Karla', 'sans-serif'],
       },
       animation: {
+        'spin-slow': 'spin-slow 8s linear infinite',
         shimmer: "shimmer 2s linear infinite",
         move: "move 5s linear infinite",
         first: "moveVertical 30s ease infinite",
