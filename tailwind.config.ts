@@ -31,7 +31,6 @@ module.exports = {
         shimmer: {
           from: {
             backgroundPosition: "0 0",
-            
           },
           to: {
             backgroundPosition: "-200% 0",
@@ -39,7 +38,7 @@ module.exports = {
           move: {
             "0%": { transform: "translateX(-200px)" },
             "100%": { transform: "translateX(200px)" },
-          },
+          },},
           moveHorizontal: {
             "0%": {
               transform: "translateX(-50%) translateY(-10%)",
@@ -75,7 +74,6 @@ module.exports = {
           },
         },
       },
-    },
   },
   plugins: [],
 };
