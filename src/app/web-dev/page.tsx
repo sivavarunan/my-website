@@ -7,7 +7,7 @@ import { TracingBeam } from '@/Components/Tracing-beam';
 const Webpage: React.FC = () => {
   return (
     <App>
-      <div className='relative w-full min-h-screen bg-transparent overflow-hidden'>
+      <div className='relative w-full min-h-screen overflow-hidden'>
         <SparklesCore
           id="tsparticlesfullpage"
           background="transparent"
@@ -33,8 +33,9 @@ const Webpage: React.FC = () => {
           {/* HTML, CSS, and JS Section */}
           <div className="flex flex-wrap mt-16 w-full px-6 md:px-12 lg:px-20 items-center justify-between">
             <div className="w-full md:w-1/2 lg:w-3/5 p-6 flex flex-col justify-start items-start space-y-4">
-              <h2 className="text-2xl font-bold text-white">HTML, CSS, and JS</h2>
-              <p className="text-gray-400">Master the core technologies that power the web, enabling you to build beautiful and functional websites.</p>
+              <h2 className="text-2xl font-bold text-red-400">HTML, CSS, and JS</h2>
+              <p className="text-yellow-300">HTML, CSS, and JavaScript are the foundational technologies in web development. HTML (HyperText Markup Language) provides the structure and content of a webpage, defining elements like headings, paragraphs, images, and links. CSS (Cascading Style Sheets) is used to control the visual presentation, allowing you to style the layout, colors, fonts, and overall design of the webpage. JavaScript adds interactivity and dynamic behavior, enabling features like form validation, animations, and responsive content updates..</p>
+              <p className='text-blue-300'>In creating a simple website, I use HTML to outline the content and structure, CSS to enhance the design and layout, and JavaScript to implement interactive elements, ensuring the site is both visually appealing and functional.</p>
             </div>
             <div className="w-full md:w-1/2 lg:w-2/5 mt-6 md:mt-0">
               <img src="html.png" alt="HTML, CSS, and JS" className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300" />
@@ -47,16 +48,18 @@ const Webpage: React.FC = () => {
               <img src="typescript.png" alt="REACT JS" className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300" />
             </div>
             <div className="w-full md:w-1/2 lg:w-3/5 p-6 flex flex-col justify-start items-start space-y-4">
-              <h2 className="text-2xl font-bold text-white">REACT JS</h2>
-              <p className="text-gray-400">Learn React JS to build dynamic user interfaces with efficient and reusable components.</p>
+              <h2 className="text-2xl font-bold text-blue-200">REACT JS</h2>
+              <p className="text-blue-300">React.js and TypeScript are powerful tools for building modern web applications. React.js is a JavaScript library that allows you to create dynamic, component-based user interfaces efficiently. It handles the view layer of your application, enabling you to build reusable UI components that can manage their state and respond to user interactions. TypeScript, a typed superset of JavaScript, adds static typing to your code, reducing errors and improving maintainability by catching issues early in the development process.</p>
+              <p className='text-blue-300'>When building a website with React.js and TypeScript, I use React to create modular components that render the UI and manage state, while TypeScript ensures type safety and clearer code structure. This combination allows me to develop robust, scalable, and maintainable applications with confidence. </p>
             </div>
           </div>
 
           {/* NEXT JS and TailwindCSS Section */}
           <div className="flex flex-wrap mt-16 w-full px-6 md:px-12 lg:px-20 items-center justify-between mb-10">
             <div className="w-full md:w-1/2 lg:w-3/5 p-6 flex flex-col justify-start items-start space-y-4">
-              <h2 className="text-2xl font-bold text-white">NEXT JS and TailwindCSS</h2>
-              <p className="text-gray-400">Combine the power of Next.js with the flexibility of Tailwind CSS to build fast, modern, and responsive web applications.</p>
+              <h2 className="text-2xl font-bold text-gray-400">NEXT JS and TailwindCSS</h2>
+              <p className="text-gray-400">Node.js is a runtime environment that allows you to run JavaScript on the server side, making it possible to build fast and scalable web applications. Unlike traditional server-side languages, Node.js is event-driven and non-blocking, which means it can handle multiple requests simultaneously without slowing down. This makes it ideal for building real-time applications, APIs, and backend services.</p>
+              <p className='text-gray-400'>When I use Node.js to create a website, I typically handle server-side logic, manage databases, and serve content to the client. Node.js allows me to write server code in JavaScript, keeping the same language throughout the entire stack, which streamlines development and makes it easier to maintain and scale the application.</p>
             </div>
             <div className="w-full md:w-1/2 lg:w-2/5 mt-6 md:mt-0 bg-slate-300 p-4 rounded-2xl opacity-35">
               <img src="next.png" alt="NEXT JS and TailwindCSS" className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300" />
