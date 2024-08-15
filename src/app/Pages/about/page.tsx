@@ -1,36 +1,40 @@
-
 import React from 'react';
-import App from '@/Components/App';
 import { BackgroundGradientAnimation } from "@/Components/background-gradient-animation";
+import App from '@/Components/App';
 
 const About = () => {
   return (
-    
-      <div className='relative h-screen overflow-hidden'>
-        <BackgroundGradientAnimation
-          gradientBackgroundStart="rgb(120, 120, 120)"  // Light red
-          gradientBackgroundEnd="rgb(0, 0, 0)"          // Black
-          firstColor="211, 211, 211"                   // Light Gray
-          secondColor="169, 169, 169"                   // Darker Gray
-          thirdColor="128, 128, 128"                   // Medium Gray
-          fourthColor="80, 80, 80"                      // Dark Gray
-          fifthColor="0, 0, 0"                          // Black
-          pointerColor="200, 200, 200"              // White for contrast
-          size="20%"
-          blendingValue="soft-light"
-        >
-          <div className="flex flex-col justify-center items-center p-4">
-            <div className="max-w-screen-lg w-full">
-              <div className="flex flex-col items-center justify-center mb-6">
-                <h1 className="text-6xl text-center font-bold font-karla bg-clip-text text-transparent bg-gradient-to-b from-red-300 via-red-500 to-black drop-shadow-2xl shadow-red-500/30 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 ease-in-out mt-3">
-                  ABOUT
-                </h1>
-                <p className='text-6xl'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos numquam aut accusamus facilis, cumque assumenda magni doloribus est nam officia ipsum corrupti neque natus, quaerat iste at autem iure soluta?</p>
-              </div>
-            </div>
-          </div>
-        </BackgroundGradientAnimation>
+    <App>
+    <div className="relative h-screen overflow-hidden">
+      <BackgroundGradientAnimation
+        gradientBackgroundStart="rgb(39, 31, 79)" 
+        gradientBackgroundEnd="rgb(22, 25, 49)"   
+        firstColor="120, 120, 120"               
+        secondColor="24, 19, 44"              
+        thirdColor="26, 15, 92"                
+        fourthColor="78, 57, 196"               
+        fifthColor="145, 165, 145"                  
+        pointerColor="0, 0, 0"                
+        size="80%"
+        blendingValue="soft-light"
+      >
+        <div className="absolute z-40 inset-0 flex flex-col items-center justify-center text-white font-bold px-4 pointer-events-none text-3xl text-center md:text-4xl lg:text-7xl ">
+        <div className="absolute inset-x-0 p-8 bg-black bg-opacity-50 text-white text-lg leading-relaxed max-w-3xl mx-auto rounded-t-lg ">
+        <h1 className="text-4xl font-bold mb-4">About Me</h1>
+        <p className="mb-4">
+          Welcome to my page! I am passionate about creating visually appealing and highly interactive web experiences.
+        </p>
+        <p className="mb-4">
+          My mission is to merge aesthetics with functionality, ensuring that every project I undertake not only looks stunning but also provides an exceptional user experience. From sleek, modern gradients to complex animations, we believe in pushing the boundaries of what's possible on the web.
+        </p>
+        <p>
+          Thank you for visiting my site. I hope you find inspiration in my work and look forward to collaborating on exciting projects!
+        </p>
       </div>
+        </div>
+      </BackgroundGradientAnimation>
+    </div>
+    </App>
   );
 };
 
