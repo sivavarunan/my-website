@@ -2,7 +2,9 @@
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./navbar-menu";
 import { cn } from "@/lib/utils";
-import { HomeIcon } from "@heroicons/react/24/outline";
+import { HomeIcon, EnvelopeIcon, CodeBracketIcon, CommandLineIcon, ComputerDesktopIcon } from "@heroicons/react/24/outline";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 export function NavbarC() {
   return (
@@ -23,14 +25,26 @@ function Navbar({ className }: { className?: string }) {
             <HomeIcon className="mr-2 h-6 w-7  hover:text-red-400 cursor-pointer" />
           </HoveredLink>
         </div>
-
         <MenuItem setActive={setActive} active={active} item="Services">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/web-dev">Web Development</HoveredLink>
-            <HoveredLink href="/interface-design">Interface Design</HoveredLink>
-            <HoveredLink href="/seo">Search Engine Optimization</HoveredLink>
-            <HoveredLink href="/branding">Branding</HoveredLink>
-            <HoveredLink href="/consulting">Consulting</HoveredLink>
+            <HoveredLink href="/web-dev">
+              <div className="flex items-center space-x-2">
+                <CodeBracketIcon className="w-6 h-6" />
+                <span>Web Development</span>
+              </div>
+            </HoveredLink>
+            <HoveredLink href="/interface-design">
+              <div className="flex items-center space-x-2">
+                <CommandLineIcon className="w-6 h-6" />
+                <span>Software Devolopment</span>
+              </div>
+            </HoveredLink>
+            <HoveredLink href="/seo">
+              <div className="flex items-center space-x-2">
+                <ComputerDesktopIcon className="w-6 h-6" />
+                <span>Video Game Devolopment</span>
+              </div>
+            </HoveredLink>
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Hobbies">
@@ -64,15 +78,36 @@ function Navbar({ className }: { className?: string }) {
               href="/products/books"
               src="/images/book.jpg"
               description="The books I lost myself in."
-            /> 
+            />
           </div>
         </MenuItem>
         <MenuItem setActive={setActive} active={active} item="Contact">
           <div className="flex flex-col space-y-4 text-sm">
-            <HoveredLink href="/contact/email">Email Us</HoveredLink>
-            <HoveredLink href="/contact/support">Support</HoveredLink>
-            <HoveredLink href="/contact/sales">Sales</HoveredLink>
-            <HoveredLink href="/contact/feedback">Feedback</HoveredLink>
+            <HoveredLink href="mailto:tharagan2001@gmail.com">
+              <div className="flex items-center space-x-2">
+                <EnvelopeIcon className="w-6 h-6" />
+                <span>Email Me</span>
+              </div>
+            </HoveredLink>
+            <HoveredLink href="https://web.facebook.com/sivavarunan.siva">
+              <div className="flex items-center space-x-2">
+                <FontAwesomeIcon icon={faFacebook} className="w-6 h-6" />
+                <span>Facebook</span>
+              </div>
+            </HoveredLink>
+            <HoveredLink href="https://www.instagram.com/sivavarunan/">
+              <div className="flex items-center space-x-2">
+                <FontAwesomeIcon icon={faInstagram} className="w-6 h-6" />
+                <span>Instagram</span>
+              </div>
+            </HoveredLink>
+            <HoveredLink href="https://www.linkedin.com/in/thevarasa-sivavarunan-0b587a266">
+              <div className="flex items-center space-x-2">
+                <FontAwesomeIcon icon={faLinkedin} className="w-6 h-6" />
+                <span>Linkedn</span>
+              </div>
+            </HoveredLink>
+
           </div>
         </MenuItem>
       </Menu>
