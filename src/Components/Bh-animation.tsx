@@ -30,7 +30,7 @@ const BhAnimation: React.FC<BhAnimationProps> = ({ children }) => {
           <div className="bh-backdrop"></div>
           <div className="bh-shadow"></div>
         </div>
-        <audio src="https://deepspace.vercel.app/audio.mp3" loop></audio>
+        <audio src="/music.mp3" loop></audio>
 
         <a
           href="https://github.com/sivavarunan"
