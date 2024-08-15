@@ -4,7 +4,7 @@ import { HoveredLink, Menu, MenuItem, ProductItem } from "./navbar-menu";
 import { cn } from "@/lib/utils";
 import { HomeIcon, EnvelopeIcon, CodeBracketIcon, CommandLineIcon, ComputerDesktopIcon } from "@heroicons/react/24/outline";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedin ,faSquareFacebook } from '@fortawesome/free-brands-svg-icons';
 
 export function NavbarC() {
   return (
@@ -91,7 +91,7 @@ function Navbar({ className }: { className?: string }) {
             </HoveredLink>
             <HoveredLink href="https://web.facebook.com/sivavarunan.siva">
               <div className="flex items-center space-x-2">
-                <FontAwesomeIcon icon={faFacebook} className="w-6 h-6" />
+                <FontAwesomeIcon icon={faSquareFacebook} className="w-6 h-6" />
                 <span>Facebook</span>
               </div>
             </HoveredLink>

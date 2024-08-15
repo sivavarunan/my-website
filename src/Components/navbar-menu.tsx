@@ -28,7 +28,7 @@ export const MenuItem = ({
     <div onMouseEnter={() => setActive(item)} className="relative ">
       <motion.p
         transition={{ duration: 0.3 }}
-        className="cursor-pointer  hover:opacity-[0.9] text-white"
+        className="cursor-pointer hover:opacity-[0.9] text-white"
       >
         {item}
       </motion.p>
@@ -39,21 +39,20 @@ export const MenuItem = ({
           transition={transition}
         >
           {active === item && (
-            <div
-             className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
+            <div className="absolute top-[calc(100%_+_1.2rem)] left-1/2 transform -translate-x-1/2 pt-4">
               <motion.div
-              style={{
-                background: 'linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8))'
-              }}
+                style={{
+                  background:
+                    "linear-gradient(90deg, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8))",
+                }}
                 transition={transition}
-                layoutId="active" // layoutId ensures smooth animation
+                layoutId="active"
                 className="bg-white dark:bg-black backdrop-blur-sm rounded-2xl overflow-hidden border border-black/[0.2] dark:border-white/[0.2] shadow-xl"
               >
-                <motion.div
-                  layout // layout ensures smooth animation
-                  className="w-max h-full p-4"
-                >
-                  {children}
+                <motion.div layout className="w-max h-full p-4">
+                  <div className="w-max h-full" >
+                    {children}
+                  </div>
                 </motion.div>
               </motion.div>
             </div>
@@ -63,6 +62,7 @@ export const MenuItem = ({
     </div>
   );
 };
+
 
 export const Menu = ({
   setActive,
@@ -75,7 +75,7 @@ export const Menu = ({
     <nav style={{
       background: 'linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))'
     }}
-      onMouseLeave={() => setActive(null)} // resets the state
+      onMouseLeave={() => setActive(null)}
       className="relative rounded-full border border-transparent  dark:border-white/[0.2]  shadow-input flex justify-center space-x-4 px-8 py-6 "
     >
       {children}
