@@ -2,8 +2,9 @@
 
 import React, { useRef, useState } from "react";
 import { Card } from "@/Components/card";
-import { SparklesCore } from "@/Components/sparkles";
 import App from "@/Components/App";
+import { Vortex } from "@/Components/vortex";
+
 
 const AnimePage: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -46,7 +47,7 @@ const AnimePage: React.FC = () => {
     },
     {
       id: 5,
-      img: "https://i.pinimg.com/564x/5e/ff/d8/5effd854ededd699e348154d5df22a55.jpg",
+      img: "https://i.pinimg.com/564x/7b/a9/dd/7ba9ddd9793858d04980721a8191f602.jpg",
       hoverImageUrl: "https://media2.giphy.com/media/v1.Y2lkPTc5MGI3NjExY29qcXNueHQyMGpwaWtmMDFscnJ6ZXJ1NWM1czlnZHE0NHAzZ3l2NyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/CFWFSmOyHclS8/giphy.webp",
       bgUrl: "https://images2.alphacoders.com/153/thumb-1920-153252.jpg",
       title: "Death Note",
@@ -62,7 +63,7 @@ const AnimePage: React.FC = () => {
     },
     {
       id: 7,
-      img: "https://i.pinimg.com/564x/71/95/29/7195292060a127f6d452e027f5bd7989.jpg",
+      img: "https://i.pinimg.com/474x/01/29/b4/0129b4ef01bd0f343fc3f5dddc4767c6.jpg",
       hoverImageUrl: "https://media1.tenor.com/m/lxjWJK0Ny3AAAAAd/thofinn.gif",
       bgUrl: "https://www.hdwallpapers.in/download/askeladd_thorfinn_hd_vinland_saga-1920x1080.jpg",
       title: "Vinland Saga",
@@ -75,7 +76,15 @@ const AnimePage: React.FC = () => {
       bgUrl: "https://e1.pxfuel.com/desktop-wallpaper/373/911/desktop-wallpaper-fullmetal-alchemist-brotherhood-fullmetal-alchemist.jpg",
       title: "Full Metal Alchamist Brotherhood",
       description: "."
-    }
+    },
+    {
+      id: 9,
+      img: "https://i.pinimg.com/564x/30/c7/8f/30c78f9995dd64e7c12c572d9b59cbf9.jpg",
+      hoverImageUrl: "https://media1.tenor.com/m/6wgIswjUj-YAAAAC/chainsaw-man-csm.gif",
+      bgUrl: "https://4kwallpapers.com/images/wallpapers/chainsaw-man-denji-3440x1440-8958.jpg",
+      title: "Chainsaw Man",
+      description: "."
+    },
   ];
 
   const handleMouseDown = (e: React.MouseEvent) => {
@@ -117,20 +126,20 @@ const AnimePage: React.FC = () => {
   return (
     <App>
    <div className="relative h-screen overflow-hidden">
-  <SparklesCore
-    id="tsparticlesfullpage"
-    background="transparent"
-    minSize={1.0}
-    maxSize={4.0}
-    particleDensity={120}
-    className="absolute inset-0"
-    particleColor="#c94242"
-    speed={5}
-  />
+   <Vortex
+          backgroundColor="transparent"
+          className=""
+          baseHue={180}
+          baseRadius={0.5}
+          baseSpeed={-1}
+          rangeY={400}
+          particleCount={500}
+        >
+
 
   <div className="flex flex-col justify-center items-center p-4">
     <div className="max-w-screen-lg w-full">
-      <div className="flex flex-col items-center justify-center mb-6">
+      <div className="flex flex-col items-center justify-center">
         <h1 className="text-6xl text-center font-bold font-karla bg-clip-text text-transparent bg-gradient-to-b from-red-300 via-red-500 to-black drop-shadow-2xl shadow-red-500/30 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 ease-in-out mt-16">
           ANIME
         </h1>
@@ -189,6 +198,7 @@ const AnimePage: React.FC = () => {
       </div>
     </div>
   </div>
+  </Vortex>
 </div>
 
     </App>
