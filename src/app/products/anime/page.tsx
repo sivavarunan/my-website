@@ -1,10 +1,9 @@
-"use client"; 
+"use client";
 
 import React, { useRef, useState } from "react";
 import { Card } from "@/Components/card";
 import App from "@/Components/App";
 import { Vortex } from "@/Components/vortex";
-
 
 const AnimePage: React.FC = () => {
   const sliderRef = useRef<HTMLDivElement>(null);
@@ -125,8 +124,8 @@ const AnimePage: React.FC = () => {
 
   return (
     <App>
-   <div className="relative h-screen overflow-hidden">
-   <Vortex
+      <div className="relative h-screen overflow-hidden">
+        <Vortex
           backgroundColor="transparent"
           className=""
           baseHue={180}
@@ -137,70 +136,69 @@ const AnimePage: React.FC = () => {
         >
 
 
-  <div className="flex flex-col justify-center items-center p-4">
-    <div className="max-w-screen-lg w-full">
-      <div className="flex flex-col items-center justify-center">
-        <h1 className="text-6xl text-center font-bold font-karla bg-clip-text text-transparent bg-gradient-to-b from-red-300 via-red-500 to-black drop-shadow-2xl shadow-red-500/30 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 ease-in-out mt-16">
-          ANIME
-        </h1>
-      </div>
+          <div className="flex flex-col justify-center items-center p-4">
+            <div className="max-w-screen-lg w-full">
+              <div className="flex flex-col items-center justify-center">
+                <h1 className="text-6xl text-center font-bold font-karla bg-clip-text text-transparent bg-gradient-to-b from-red-300 via-red-500 to-black drop-shadow-2xl shadow-red-500/30 p-6 rounded-lg transform hover:scale-105 transition-transform duration-300 ease-in-out mt-16">
+                  ANIME
+                </h1>
+              </div>
 
-      <div className="relative w-full">
-        <div 
-          ref={sliderRef}
-          className="flex gap-4 overflow-x-auto no-scrollbar py-2"
-          onMouseDown={handleMouseDown}
-          onMouseLeave={handleMouseLeave}
-          onMouseUp={handleMouseUp}
-          onMouseMove={handleMouseMove}
-          onTouchStart={handleTouchStart}
-          onTouchEnd={handleTouchEnd}
-          onTouchMove={handleTouchMove}
-        >
+              <div className="relative w-full">
+                <div
+                  ref={sliderRef}
+                  className="flex gap-4 overflow-x-auto no-scrollbar py-2"
+                  onMouseDown={handleMouseDown}
+                  onMouseLeave={handleMouseLeave}
+                  onMouseUp={handleMouseUp}
+                  onMouseMove={handleMouseMove}
+                  onTouchStart={handleTouchStart}
+                  onTouchEnd={handleTouchEnd}
+                  onTouchMove={handleTouchMove}
+                >
 
-          {AnimeList.map((item) => (
-            <div
-              key={item.id}
-              className="flex-none w-60 bg-white rounded-lg shadow-md overflow-hidden"
-             
-            >
-              <Card
-                title={item.title}
-                description={item.description}
-                imageUrl={item.img}
-                hoverImageUrl={item.hoverImageUrl}
-                bgUrl={item.bgUrl}
-              />
+                  {AnimeList.map((item) => (
+                    <div
+                      key={item.id}
+                      className="flex-none w-60 bg-white rounded-lg shadow-md overflow-hidden"
+
+                    >
+                      <Card
+                        title={item.title}
+                        description={item.description}
+                        imageUrl={item.img}
+                        hoverImageUrl={item.hoverImageUrl}
+                        bgUrl={item.bgUrl}
+                      />
+                    </div>
+                  ))}
+                </div>
+
+                <button
+                  onClick={() => {
+                    if (sliderRef.current) {
+                      sliderRef.current.scrollBy({ left: -500, behavior: "smooth" });
+                    }
+                  }}
+                  className="absolute top-1/2 left-[-20px] transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600"
+                >
+                  &#9664;
+                </button>
+                <button
+                  onClick={() => {
+                    if (sliderRef.current) {
+                      sliderRef.current.scrollBy({ left: 500, behavior: "smooth" });
+                    }
+                  }}
+                  className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600"
+                >
+                  &#9654;
+                </button>
+              </div>
             </div>
-          ))}
-        </div>
-
-        <button
-          onClick={() => {
-            if (sliderRef.current) {
-              sliderRef.current.scrollBy({ left: -500, behavior: "smooth" });
-            }
-          }}
-          className="absolute top-1/2 left-[-20px] transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600"
-        >
-          &#9664;
-        </button>
-        <button
-          onClick={() => {
-            if (sliderRef.current) {
-              sliderRef.current.scrollBy({ left: 500, behavior: "smooth" });
-            }
-          }}
-          className="absolute top-1/2 right-[-20px] transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow-lg hover:bg-gray-600"
-        >
-          &#9654;
-        </button>
+          </div>
+        </Vortex>
       </div>
-    </div>
-  </div>
-  </Vortex>
-</div>
-
     </App>
   );
 };
