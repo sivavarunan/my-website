@@ -33,7 +33,7 @@ function Navbar({ className }: { className?: string }) {
                 <span>Web Development</span>
               </div>
             </HoveredLink>
-            <HoveredLink href="/interface-design">
+            <HoveredLink href="/software-dev">
               <div className="flex items-center space-x-2">
                 <CommandLineIcon className="w-6 h-6" />
                 <span>Software Devolopment</span>
