@@ -7,7 +7,7 @@ interface AppProps {
 
 const App: React.FC<AppProps> = ({ children }) => {
   return (
-    <div className="relative w-full h-auto bg-black z-50">
+    <div className="relative w-full h-auto bg-black z-40">
       <NavbarC />
       <div className=""> 
         {children}
