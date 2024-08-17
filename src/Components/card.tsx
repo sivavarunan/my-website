@@ -70,17 +70,18 @@ export const Card: React.FC<CardProps> = ({ title, description, imageUrl, hoverI
               exit={{ scale: 0.8 }}
               transition={{ duration: 0.3 }}
             >
-              <div className="flex justify-end p-4">
-                <button
-                  className="inline-flex h-8 w-8 items-center justify-center rounded-md border hover:text-red-800 text-2xl border-slate-400 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-2 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
-                  onClick={handleClosePopup}
-                >
-                  &times;
-                </button>
-              </div>
-              <div className="relative h-full flex flex-col  p-6 rounded-lg">
+
+              <div className="relative h-full flex flex-col  p-6 rounded-lg mt-16">
                 <h2 className="text-3xl font-bold text-white mb-4">{title}</h2>
                 <p className="text-lg text-white">{description}</p>
+              </div> <div className="flex justify-end p-4 z-50">
+
+                <button
+                  className="inline-flex h-18  w-18 items-center justify-center rounded-xl border hover:text-red-800 text-2xl border-slate-400 bg-[linear-gradient(110deg,#000103,45%,#1e2631,55%,#000103)] bg-[length:200%_100%] px-2 font-medium text-slate-400 transition-colors focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50"
+                  onClick={handleClosePopup}
+                >
+                  close
+                </button>
               </div>
             </motion.div>
           </motion.div>
