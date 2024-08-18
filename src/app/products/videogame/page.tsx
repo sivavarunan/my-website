@@ -2,7 +2,7 @@
 import React from 'react';
 import App from '@/Components/App';
 import { SparklesCore } from '@/Components/sparkles';
-import { ExpandableCardDemo } from '@/Components/ExpandableCard';
+
 
 const VideoGamePage: React.FC = () => {
   return (
@@ -30,7 +30,6 @@ const VideoGamePage: React.FC = () => {
             </div>
           </div>
         </div>
-        <div className='z-50'> <ExpandableCardDemo /></div>
       </div>
     </App>
   );
