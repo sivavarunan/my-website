@@ -3,6 +3,7 @@ import React from 'react';
 import App from '@/Components/App';
 import { SparklesCore } from "@/Components/sparkles";
 import { TracingBeam } from '@/Components/Tracing-beam';
+import Image from 'next/image';
 
 const Webpage: React.FC = () => {
   return (
@@ -38,14 +39,26 @@ const Webpage: React.FC = () => {
               <p className='text-red-300'>In creating a simple website, I use HTML to outline the content and structure, CSS to enhance the design and layout, and JavaScript to implement interactive elements, ensuring the site is both visually appealing and functional.</p>
             </div>
             <div className="w-full md:w-1/2 lg:w-2/5 mt-6 md:mt-0">
-              <img src="html.png" alt="HTML, CSS, and JS" className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300" />
+              <Image 
+                src="/html.png" 
+                width={500} 
+                height={300} 
+                alt="HTML, CSS, and JS" 
+                className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300" 
+              />
             </div>
           </div>
 
           {/* REACT JS Section */}
           <div className="flex flex-wrap mt-16 w-full px-6 md:px-12 lg:px-20 items-center justify-between bg-white bg-opacity-10 border-2 border-gray-700 rounded-2xl">
             <div className="w-full md:w-1/2 lg:w-2/5 mt-6 md:mt-0">
-              <img src="typescript.png" alt="REACT JS" className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300" />
+              <Image 
+                src="/typescript.png" 
+                width={500} 
+                height={300} 
+                alt="REACT JS" 
+                className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300" 
+              />
             </div>
             <div className="w-full md:w-1/2 lg:w-3/5 p-6 flex flex-col justify-start items-start space-y-4">
               <h2 className="text-2xl font-bold text-blue-200">REACT JS</h2>
@@ -62,7 +75,13 @@ const Webpage: React.FC = () => {
               <p className='text-gray-400'>When I use Node.js to create a website, I typically handle server-side logic, manage databases, and serve content to the client. Node.js allows me to write server code in JavaScript, keeping the same language throughout the entire stack, which streamlines development and makes it easier to maintain and scale the application.</p>
             </div>
             <div className="w-full md:w-1/2 lg:w-2/5 mt-6 md:mt-0 bg-yellow-100 p-4 rounded-2xl opacity-35">
-              <img src="next.png" alt="NEXT JS and TailwindCSS" className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300" />
+              <Image 
+                src="/next.png" 
+                width={500} 
+                height={300} 
+                alt="NEXT JS and TailwindCSS" 
+                className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300" 
+              />
             </div>
           </div>
         </TracingBeam>

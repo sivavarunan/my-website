@@ -28,11 +28,11 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
         <Image
-          src={"/java.jpg"}
+          src="/java.jpg"
+          alt="Java"
           width={300}
           height={300}
           className="h-full w-full object-cover"
-          alt="Java"
         />
       </div>
     ),
@@ -43,11 +43,11 @@ const content = [
     content: (
       <div className="h-full w-full flex items-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] justify-center text-white">
         <Image
-          src={"/python.jpg"}
+          src="/python.jpg"
+          alt="Python"
           width={300}
           height={300}
           className="h-full w-full object-cover"
-          alt="Python"
         />
       </div>
     ),
@@ -58,11 +58,11 @@ const content = [
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
         <Image
-          src={"/js.jpg"}
+          src="/js.jpg"
+          alt="JavaScript"
           width={300}
           height={300}
           className="h-full w-full object-cover"
-          alt="JavaScript"
         />
       </div>
     ),
