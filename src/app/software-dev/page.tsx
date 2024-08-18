@@ -24,7 +24,7 @@ export default InterfacePage;
 const content = [
   {
     title: "JAVA",
-    description: "I do software development using Java, leveraging its object-oriented programming (OOP) concepts to create efficient and scalable applications. Java&apos;s platform independence allows me to build solutions that run seamlessly across different environments. I use Java for a variety of projects, from web applications to enterprise-level systems, taking advantage of its rich ecosystem of libraries and frameworks. The language&apos;s strong community support and robust performance make it a reliable choice for developing high-quality software.",
+    description: "I do software development using Java, leveraging its object-oriented programming (OOP) concepts to create efficient and scalable applications. Java platform independence allows me to build solutions that run seamlessly across different environments. I use Java for a variety of projects, from web applications to enterprise-level systems, taking advantage of its rich ecosystem of libraries and frameworks. The language&apos;s strong community support and robust performance make it a reliable choice for developing high-quality software.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
         <Image

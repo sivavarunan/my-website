@@ -25,7 +25,7 @@ const About = () => {
           Welcome to my page! I am passionate about creating visually appealing and highly interactive web experiences.
         </p>
         <p className="mb-4">
-          My mission is to merge aesthetics with functionality, ensuring that every project I undertake not only looks stunning but also provides an exceptional user experience. From sleek, modern gradients to complex animations, we believe in pushing the boundaries of what's possible on the web.
+          My mission is to merge aesthetics with functionality, ensuring that every project I undertake not only looks stunning but also provides an exceptional user experience. From sleek, modern gradients to complex animations, we believe in pushing the boundaries of what is possible on the web.
         </p>
         <p>
           Thank you for visiting my site. I hope you find inspiration in my work and look forward to collaborating on exciting projects!
