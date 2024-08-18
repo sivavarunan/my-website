@@ -26,12 +26,12 @@ const Webpage: React.FC = () => {
             </h1>
           </div>
 
-          <div className="mt-10 text-center">
+          <div className="mt-8 text-center">
             <h2 className="text-3xl text-white font-medium"></h2>
           </div>
 
           {/* HTML, CSS, and JS Section */}
-          <div className="flex flex-wrap mt-16 w-full px-6 md:px-12 lg:px-20 items-center justify-between">
+          <div className="flex flex-wrap mt-16 w-full px-6 md:px-12 lg:px-20 items-center justify-between bg-black bg-opacity-80 border-2 border-gray-800 rounded-2xl">
             <div className="w-full md:w-1/2 lg:w-3/5 p-6 flex flex-col justify-start items-start space-y-4">
               <h2 className="text-2xl font-bold text-red-400">HTML, CSS, and JS</h2>
               <p className="text-red-300">HTML, CSS, and JavaScript are the foundational technologies in web development. HTML (HyperText Markup Language) provides the structure and content of a webpage, defining elements like headings, paragraphs, images, and links. CSS (Cascading Style Sheets) is used to control the visual presentation, allowing you to style the layout, colors, fonts, and overall design of the webpage. JavaScript adds interactivity and dynamic behavior, enabling features like form validation, animations, and responsive content updates..</p>
@@ -43,7 +43,7 @@ const Webpage: React.FC = () => {
           </div>
 
           {/* REACT JS Section */}
-          <div className="flex flex-wrap mt-16 w-full px-6 md:px-12 lg:px-20 items-center justify-between">
+          <div className="flex flex-wrap mt-16 w-full px-6 md:px-12 lg:px-20 items-center justify-between bg-white bg-opacity-10 border-2 border-gray-700 rounded-2xl">
             <div className="w-full md:w-1/2 lg:w-2/5 mt-6 md:mt-0">
               <img src="typescript.png" alt="REACT JS" className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300" />
             </div>
@@ -55,13 +55,13 @@ const Webpage: React.FC = () => {
           </div>
 
           {/* NEXT JS and TailwindCSS Section */}
-          <div className="flex flex-wrap mt-16 w-full px-6 md:px-12 lg:px-20 items-center justify-between mb-10">
+          <div className="flex flex-wrap mt-16 w-full px-6 md:px-12 lg:px-20 items-center justify-between mb-10 bg-black bg-opacity-80 border-2 border-gray-800 rounded-2xl">
             <div className="w-full md:w-1/2 lg:w-3/5 p-6 flex flex-col justify-start items-start space-y-4">
               <h2 className="text-2xl font-bold text-gray-400">NEXT JS and TailwindCSS</h2>
               <p className="text-gray-400">Node.js is a runtime environment that allows you to run JavaScript on the server side, making it possible to build fast and scalable web applications. Unlike traditional server-side languages, Node.js is event-driven and non-blocking, which means it can handle multiple requests simultaneously without slowing down. This makes it ideal for building real-time applications, APIs, and backend services.</p>
               <p className='text-gray-400'>When I use Node.js to create a website, I typically handle server-side logic, manage databases, and serve content to the client. Node.js allows me to write server code in JavaScript, keeping the same language throughout the entire stack, which streamlines development and makes it easier to maintain and scale the application.</p>
             </div>
-            <div className="w-full md:w-1/2 lg:w-2/5 mt-6 md:mt-0 bg-slate-300 p-4 rounded-2xl opacity-35">
+            <div className="w-full md:w-1/2 lg:w-2/5 mt-6 md:mt-0 bg-yellow-100 p-4 rounded-2xl opacity-35">
               <img src="next.png" alt="NEXT JS and TailwindCSS" className="w-full h-auto object-cover rounded-2xl shadow-lg hover:shadow-2xl transition-shadow duration-300" />
             </div>
           </div>
