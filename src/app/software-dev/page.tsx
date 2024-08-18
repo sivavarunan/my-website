@@ -24,7 +24,7 @@ export default InterfacePage;
 const content = [
   {
     title: "JAVA",
-    description: "I do software development using Java, leveraging its object-oriented programming (OOP) concepts to create efficient and scalable applications. Java's platform independence allows me to build solutions that run seamlessly across different environments. I use Java for a variety of projects, from web applications to enterprise-level systems, taking advantage of its rich ecosystem of libraries and frameworks. The language's strong community support and robust performance make it a reliable choice for developing high-quality software.",
+    description: "I do software development using Java, leveraging its object-oriented programming (OOP) concepts to create efficient and scalable applications. Java&apos;s platform independence allows me to build solutions that run seamlessly across different environments. I use Java for a variety of projects, from web applications to enterprise-level systems, taking advantage of its rich ecosystem of libraries and frameworks. The language&apos;s strong community support and robust performance make it a reliable choice for developing high-quality software.",
     content: (
       <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
         <Image
@@ -32,50 +32,48 @@ const content = [
           width={300}
           height={300}
           className="h-full w-full object-cover"
-          alt="linear board demo"
+          alt="Java"
         />
       </div>
     ),
   },
   {
     title: "PYTHON",
-    description:
-      "I do software development using Python, utilizing its simplicity and versatility to build a wide range of applications. Python's dynamic typing and readability make it ideal for rapid development, whether I'm working on web applications, data analysis, or automation scripts. I leverage Python's extensive libraries and frameworks, like Django and Flask for web development or Pandas and NumPy for data science. Its strong community support and cross-platform capabilities ensure that I can create efficient and scalable solutions across different domains.", content: (
-        <div className="h-full w-full flex items-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] justify-center text-white">
-          <Image
-            src={"/python.jpg"}
-            width={300}
-            height={300}
-            className="h-full w-full object-cover"
-            alt="linear board demo"
-          />
-        </div>
-      ),
+    description: "I do software development using Python, utilizing its simplicity and versatility to build a wide range of applications. Python&apos;s dynamic typing and readability make it ideal for rapid development, whether I&apos;m working on web applications, data analysis, or automation scripts. I leverage Python&apos;s extensive libraries and frameworks, like Django and Flask for web development or Pandas and NumPy for data science. Its strong community support and cross-platform capabilities ensure that I can create efficient and scalable solutions across different domains.",
+    content: (
+      <div className="h-full w-full flex items-center bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] justify-center text-white">
+        <Image
+          src={"/python.jpg"}
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="Python"
+        />
+      </div>
+    ),
   },
   {
     title: "JavaScript",
-    description:
-      "I do software development using JavaScript, focusing on building interactive and dynamic web applications. JavaScript's versatility allows me to work on both the front-end and back-end, using frameworks like React for responsive user interfaces and Node.js for server-side development. I leverage its event-driven nature and rich ecosystem of libraries to create seamless user experiences and real-time functionality. JavaScript's wide browser support and community-driven resources make it a powerful tool for developing modern web applications that are fast, efficient, and scalable.", content: (
-        <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-          <Image
-            src={"/js.jpg"}
-            width={300}
-            height={300}
-            className="h-full w-full object-cover"
-            alt="linear board demo"
-          />
-        </div>
-      ),
+    description: "I do software development using JavaScript, focusing on building interactive and dynamic web applications. JavaScript&apos;s versatility allows me to work on both the front-end and back-end, using frameworks like React for responsive user interfaces and Node.js for server-side development. I leverage its event-driven nature and rich ecosystem of libraries to create seamless user experiences and real-time functionality. JavaScript&apos;s wide browser support and community-driven resources make it a powerful tool for developing modern web applications that are fast, efficient, and scalable.",
+    content: (
+      <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+        <Image
+          src={"/js.jpg"}
+          width={300}
+          height={300}
+          className="h-full w-full object-cover"
+          alt="JavaScript"
+        />
+      </div>
+    ),
   },
- 
   {
     title: "",
     description: ".",
     content: (
-      <div className="h-full w-full bg-transperent flex items-center justify-center text-white">
+      <div className="h-full w-full bg-transparent flex items-center justify-center text-white">
         Running out of content
       </div>
     ),
   },
 ];
-
