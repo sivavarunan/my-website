@@ -1,7 +1,6 @@
 import { Config } from 'tailwindcss';
 import type { PluginCreator } from 'tailwindcss/types/config';
 
-// Define the plugin function
 const addVariablesForColors: PluginCreator = ({ addBase, theme }) => {
   const colors = theme('colors') as Record<string, string | Record<string, string>>;
   const newVars = Object.entries(colors).reduce((vars, [color, shades]) => {
@@ -20,12 +19,13 @@ const addVariablesForColors: PluginCreator = ({ addBase, theme }) => {
   });
 };
 
-// Export the configuration
+
 const config: Config = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/about/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
     extend: {
