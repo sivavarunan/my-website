@@ -1,5 +1,5 @@
 import React from 'react';
-import App from '@/Components/App';
+import App from '@/Components/ui/App';
 import { StickyScroll } from '@/Components/Sticky-scroll-reveal';
 import Image from 'next/image';
 

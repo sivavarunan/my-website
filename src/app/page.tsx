@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import App from '@/Components/App';  
+import App from '@/Components/ui/App';  
 import "./globals.css";
 import { TextGenerateEffect } from "@/Components/text-generate-effect";
 import BhAnimation from '@/Components/Bh-animation';

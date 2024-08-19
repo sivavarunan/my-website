@@ -1,6 +1,6 @@
 
 import React from 'react';
-import App from '@/Components/App';
+import App from '@/Components/ui/App';
 import { SparklesCore } from '@/Components/sparkles';
 
 

@@ -1,7 +1,7 @@
 'use client'
 import React from 'react';
 import { Card } from '@/Components/card';
-import App from '@/Components/App';
+import App from '@/Components/ui/App';
 import { Vortex } from '@/Components/vortex';
 
 const MoviesPage: React.FC = () => {

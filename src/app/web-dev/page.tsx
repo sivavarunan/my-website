@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import App from '@/Components/App';
+import App from '@/Components/ui/App';
 import { SparklesCore } from "@/Components/sparkles";
 import { TracingBeam } from '@/Components/Tracing-beam';
 import Image from 'next/image';

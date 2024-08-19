@@ -2,7 +2,7 @@
 
 import React, { useRef, useState } from "react";
 import { Card } from "@/Components/card";
-import App from "@/Components/App";
+import App from "@/Components/ui/App";
 import { Vortex } from "@/Components/vortex";
 
 const AnimePage: React.FC = () => {

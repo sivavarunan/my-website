@@ -1,6 +1,6 @@
 import React from 'react';
 import { BackgroundGradientAnimation } from "@/Components/background-gradient-animation";
-import App from '@/Components/App';
+import App from '@/Components/ui/App';
 
 const About = () => {
   return (

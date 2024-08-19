@@ -5,7 +5,7 @@ import Image from "next/image";
 import { twMerge } from "tailwind-merge";
 import { TracingBeam } from "@/Components/Tracing-beam";
 import { SparklesCore } from "@/Components/sparkles";
-import App from '@/Components/App';
+import App from '@/Components/ui/App';
 
 const SeoPage: React.FC = () => {
   return (

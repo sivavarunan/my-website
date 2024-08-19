@@ -1,5 +1,5 @@
 import React, { ReactNode } from 'react';
-import { NavbarC } from '@/Components/Navbar';
+import { NavbarC } from '@/Components/ui/Navbar';
 
 interface AppProps {
   children: ReactNode;

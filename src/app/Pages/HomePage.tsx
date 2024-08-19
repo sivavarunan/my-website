@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { TextGenerateEffect } from "@/Components/text-generate-effect";
-import App from '@/Components/App';
+import App from '@/Components/ui/App';
 import BhAnimation from '@/Components/Bh-animation';
 import Link from 'next/link';
 
