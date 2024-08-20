@@ -8,7 +8,7 @@ import { faInstagram, faLinkedin ,faSquareFacebook } from '@fortawesome/free-bra
 
 export function NavbarC() {
   return (
-    <div className="relative w-full flex items-center justify-center">
+    <div className="relative flex items-center justify-center">
       <Navbar className="top-3" />
     </div>
   );
