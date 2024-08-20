@@ -268,7 +268,7 @@ const cards = [
           Known for its intense, tactical gameplay, Counter-Strike pits two teams, Terrorists and Counter-Terrorists,
           against each other in various objective-based modes. The most iconic mode involves the Terrorists attempting
           to plant a bomb at a designated site while the Counter-Terrorists must prevent the bomb from being planted or defuse
-          it if it is. Another popular mode focuses on rescuing hostages held by the Terrorists. Counter-Strike's gameplay emphasizes
+          it if it is. Another popular mode focuses on rescuing hostages held by the Terrorists. Counter-Strike :&apos; gameplay emphasizes
           strategy, teamwork, and skillful shooting, with players earning money based on their performance,
           which they can spend on weapons and equipment at the start of each round.
         </p>

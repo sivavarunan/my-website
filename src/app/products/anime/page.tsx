@@ -128,7 +128,7 @@ const AnimePage: React.FC = () => {
         <Vortex
           backgroundColor="transparent"
           className=""
-          baseHue={180}
+          baseHue={300}
           baseRadius={0.5}
           baseSpeed={-1}
           rangeY={400}
