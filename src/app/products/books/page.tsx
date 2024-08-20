@@ -15,7 +15,7 @@ const BooksPage: React.FC = () => {
           maxSize={4.0}
           particleDensity={120}
           className="absolute inset-0"
-          particleColor="#383838"
+          particleColor="#326414"
           speed={5}
         />
         <div className="flex flex-col justify-center items-center p-4 mt-10">

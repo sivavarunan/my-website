@@ -1,7 +1,8 @@
-
+"use client"
 import React from 'react';
 import App from '@/Components/ui/App';
 import { SparklesCore } from '@/Components/sparkles';
+import { ExpandableCard } from '@/Components/ExpandableCard';
 
 
 const VideoGamePage: React.FC = () => {
@@ -26,6 +27,9 @@ const VideoGamePage: React.FC = () => {
                   VIDEO GAMES
                 </h1>
                 <p>This page will showcase video games i played and fell in love with.</p>
+              </div>
+              <div className= 'absolute'>
+              <ExpandableCard/>
               </div>
             </div>
           </div>

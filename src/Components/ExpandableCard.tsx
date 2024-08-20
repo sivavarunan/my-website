@@ -3,6 +3,7 @@ import Image from "next/image";
 import React, { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useOutsideClick } from "@/Components/Use-outside-click";
+import { title } from "process";
 
 export function ExpandableCard() {
   const [active, setActive] = useState<(typeof cards)[number] | boolean | null>(
@@ -73,8 +74,8 @@ export function ExpandableCard() {
               <motion.div layoutId={`image-${active.title}-${id}`}>
                 <Image
                   priority
-                  width={200}
-                  height={200}
+                  width={800}
+                  height={800}
                   src={active.src}
                   alt={active.title}
                   className="w-full h-80 lg:h-80 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
@@ -206,112 +207,90 @@ export const CloseIcon = () => {
 
 const cards = [
   {
-    description: "Lana Del Rey",
-    title: "Summertime Sadness",
-    src: "https://assets.aceternity.com/demos/lana-del-rey.jpeg",
+    title: "Fortnite",
+    description: "Battle Royale",
+    src: "/fort.jpg",
     ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.fortnite.com",
     content: () => {
       return (
         <p>
-          Lana Del Rey, an iconic American singer-songwriter, is celebrated for
-          her melancholic and cinematic music style. Born Elizabeth Woolridge
-          Grant in New York City, she has captivated audiences worldwide with
-          her haunting voice and introspective lyrics. <br /> <br /> Her songs
-          often explore themes of tragic romance, glamour, and melancholia,
-          drawing inspiration from both contemporary and vintage pop culture.
-          With a career that has seen numerous critically acclaimed albums, Lana
-          Del Rey has established herself as a unique and influential figure in
-          the music industry, earning a dedicated fan base and numerous
-          accolades.
+          Fortnite, developed by Epic Games and released in 2017,
+          is a widely popular online video game known for its vibrant graphics,
+          fast-paced gameplay, and unique building mechanics. The game offers
+          three main modes: Battle Royale, where up to 100 players compete to be the last one
+          standing on an ever-shrinking island; Save the World, a cooperative mode where players
+          team up to fend off waves of zombie-like creatures while building fortifications; and Creative,
+          which gives players the freedom to design their own maps and games. Fortnite has become a cultural phenomenon,
+          renowned for its frequent updates, in-game events, and collaborations with various brands and celebrities.
+          Its influence extends beyond gaming, making it a significant part of modern pop culture.
         </p>
       );
     },
   },
   {
-    description: "Babbu Maan",
-    title: "Mitran Di Chhatri",
-    src: "https://assets.aceternity.com/demos/babbu-maan.jpeg",
+    title: "Minecraft",
+    description: "Survival",
+    src: "/mc.jpg",
     ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.minecraft.net/",
     content: () => {
       return (
         <p>
-          Babu Maan, a legendary Punjabi singer, is renowned for his soulful
-          voice and profound lyrics that resonate deeply with his audience. Born
-          in the village of Khant Maanpur in Punjab, India, he has become a
-          cultural icon in the Punjabi music industry. <br /> <br /> His songs
-          often reflect the struggles and triumphs of everyday life, capturing
-          the essence of Punjabi culture and traditions. With a career spanning
-          over two decades, Babu Maan has released numerous hit albums and
-          singles that have garnered him a massive fan following both in India
-          and abroad.
+          Minecraft, developed by Mojang Studios and released in 2011,
+          is a sandbox video game that has become one of the best-selling and most influential
+          games of all time. Known for its blocky, pixelated graphics, Minecraft offers
+          players an open-ended world where they can explore, mine resources, craft tools
+          and items, and build structures in a virtually infinite landscape. The game features
+          several modes, including Survival, where players must manage resources, health, and hunger
+          while defending against creatures like zombies and skeletons; Creative, which grants unlimited
+          resources and allows players to focus on building and creativity without the threat of enemies;
+          and Adventure, designed for custom maps with specific challenges. Minecraft simplicity and
+          limitless possibilities have fostered a massive community, inspiring creativity, education,
+          and collaboration. The game enduring popularity is reflected in its expansive modding scene,
+          frequent updates, and widespread cultural impact, making it a cornerstone of modern gaming.
         </p>
       );
     },
   },
 
   {
-    description: "Metallica",
-    title: "For Whom The Bell Tolls",
-    src: "https://assets.aceternity.com/demos/metallica.jpeg",
+    title: "CS:GO",
+    description: "First Person Shooter",
+    src: "/cs.jpg",
     ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://www.counter-strike.net",
     content: () => {
       return (
         <p>
-          Metallica, an iconic American heavy metal band, is renowned for their
-          powerful sound and intense performances that resonate deeply with
-          their audience. Formed in Los Angeles, California, they have become a
-          cultural icon in the heavy metal music industry. <br /> <br /> Their
-          songs often reflect themes of aggression, social issues, and personal
-          struggles, capturing the essence of the heavy metal genre. With a
-          career spanning over four decades, Metallica has released numerous hit
-          albums and singles that have garnered them a massive fan following
-          both in the United States and abroad.
+          Counter-Strike is a legendary first-person shooter game series that began as
+          a mod for Half-Life in 1999 before becoming a standalone game developed by Valve Corporation.
+          Known for its intense, tactical gameplay, Counter-Strike pits two teams, Terrorists and Counter-Terrorists,
+          against each other in various objective-based modes. The most iconic mode involves the Terrorists attempting
+          to plant a bomb at a designated site while the Counter-Terrorists must prevent the bomb from being planted or defuse
+          it if it is. Another popular mode focuses on rescuing hostages held by the Terrorists. Counter-Strike's gameplay emphasizes
+          strategy, teamwork, and skillful shooting, with players earning money based on their performance,
+          which they can spend on weapons and equipment at the start of each round.
         </p>
       );
     },
   },
   {
-    description: "Led Zeppelin",
-    title: "Stairway To Heaven",
-    src: "https://assets.aceternity.com/demos/led-zeppelin.jpeg",
+    title: "Overwatch 2",
+    description: "FPS",
+    src: "/overwatch.jpg",
     ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
+    ctaLink: "https://overwatch.blizzard.com",
     content: () => {
       return (
         <p>
-          Led Zeppelin, a legendary British rock band, is renowned for their
-          innovative sound and profound impact on the music industry. Formed in
-          London in 1968, they have become a cultural icon in the rock music
-          world. <br /> <br /> Their songs often reflect a blend of blues, hard
-          rock, and folk music, capturing the essence of the 1970s rock era.
-          With a career spanning over a decade, Led Zeppelin has released
-          numerous hit albums and singles that have garnered them a massive fan
-          following both in the United Kingdom and abroad.
-        </p>
-      );
-    },
-  },
-  {
-    description: "Mustafa Zahid",
-    title: "Toh Phir Aao",
-    src: "https://assets.aceternity.com/demos/toh-phir-aao.jpeg",
-    ctaText: "Play",
-    ctaLink: "https://ui.aceternity.com/templates",
-    content: () => {
-      return (
-        <p>
-          &quot;Aawarapan&quot;, a Bollywood movie starring Emraan Hashmi, is
-          renowned for its intense storyline and powerful performances. Directed
-          by Mohit Suri, the film has become a significant work in the Indian
-          film industry. <br /> <br /> The movie explores themes of love,
-          redemption, and sacrifice, capturing the essence of human emotions and
-          relationships. With a gripping narrative and memorable music,
-          &quot;Aawarapan&quot; has garnered a massive fan following both in
-          India and abroad, solidifying Emraan Hashmi&apos;s status as a
-          versatile actor.
+          Overwatch, developed by Blizzard Entertainment and released in 2016,
+          is a team-based first-person shooter that has gained widespread acclaim
+          for its diverse cast of characters, fast-paced gameplay, and vibrant,
+          colorful visuals. Set in a near-future Earth, Overwatch features a roster of heroes,
+          each with unique abilities and roles, categorized into three main classes: Damage, Tank,
+          and Support. Teams of six players must work together to complete various objectives,
+          such as capturing control points or escorting a payload across a map.
         </p>
       );
     },
